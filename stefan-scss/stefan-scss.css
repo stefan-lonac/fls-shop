@@ -1,0 +1,263 @@
+/* STRAINJA style*/
+input[type="submit"], input[type="reset"], input[type="button"], input[type="text"], input[type="password"], button {
+  cursor: auto; }
+
+input[type="text"] {
+  background-color: white; }
+
+/* ----> BESTELLEN page <---- */
+/* selct list */
+.custom-select {
+  margin: 0 auto; }
+
+.select-items div, .select-selected {
+  background-color: white; }
+
+.select-items {
+  top: 95px; }
+
+/* END: selct list */
+.fls__checkbox label {
+  color: #555555 !important; }
+  .fls__checkbox label:before {
+    height: 18px;
+    width: 18px; }
+  .fls__checkbox label:after {
+    width: 9px; }
+
+/* Email section */
+.fls__modal {
+  padding: 50px 0 0 0px;
+  margin: 0 auto; }
+
+/* END: Email section */
+/* ---->END: BESTELLEN page <---- */
+/* ---->START: SCHULEN DIE DAS FLS HABEN page <---- */
+.icon-ic_cart_grey:before {
+  box-shadow: none !important; }
+
+.fls__cart {
+  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox; }
+
+.fls__filters .cart__content .sum {
+  bottom: 10px; }
+
+.fls__filters {
+  margin-bottom: 0 !important; }
+  .fls__filters .filter__flex {
+    padding: 0 15px;
+    justify-content: normal !important; }
+    .fls__filters .filter__flex .fls__radios, .fls__filters .filter__flex .fls__checkbox {
+      width: 25%; }
+
+.fls__pagination ul {
+  display: flex;
+  justify-content: flex-end; }
+
+/* ---->END:: SCHULEN DIE DAS FLS HABEN page <---- */
+/* ----> SCHULEN DIE DAS FLS HABEN page <---- */
+/* START: Pagination */
+.fls__pagination ul li {
+  float: right; }
+  .fls__pagination ul li:last-child {
+    margin-right: 8px; }
+
+/* END: Pagination */
+/* START: table */
+.fls__modal {
+  max-width: inherit;
+  border-radius: 0; }
+
+/* END: table */
+/* START: table input */
+.fls__table table td input {
+  border-radius: 18px; }
+  .fls__table table td input:hover {
+    border-color: #A8AAB1; }
+  .fls__table table td input:focus {
+    border-color: #53AFD8; }
+.fls__table table tbody tr:last-child {
+  border-bottom: 1px solid #D1D5DB; }
+
+/* END: table input */
+/* ----> END: SCHULEN DIE DAS FLS HABEN page <---- */
+/* ----> START: WARENKORB page <---- */
+/* START: delete icon */
+.icon-ic_delete {
+  cursor: pointer; }
+
+/* END: delete icon */
+/* ----> END: WARENKORB page <---- */
+/* =========================================================================== */
+/* ----> START: BESTELL - LISTE page <---- */
+.fls__radio ul li {
+  display: inline-block;
+  width: 20%; }
+.fls__radio .textContH {
+  text-align: left;
+  padding-top: 0; }
+
+/* ----> END: BESTELL - LISTE page <---- */
+/* =========================================================================== */
+/* STRAINJA style*/
+/* COLORS */
+/* END: COLORS */
+/* START: GRID */
+.grid-800 {
+  max-width: 800px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%; }
+
+/* END: GRID */
+/* START: Paddings*/
+/* Padding == top == */
+.pt-20 {
+  padding-top: 20px; }
+
+.pt-40 {
+  padding-top: 40px; }
+
+.pt-50 {
+  padding-top: 50px; }
+
+.pt-60 {
+  padding-top: 60px; }
+
+/*END: Padding == top == */
+/* Padding == bottom == */
+.pb-20 {
+  padding-bottom: 20px; }
+
+.pb-40 {
+  padding-bottom: 40px; }
+
+.pb-50 {
+  padding-bottom: 50px; }
+
+.pb-60 {
+  padding-bottom: 60px; }
+
+/* END: Padding == bottom == */
+/* END: Paddings */
+/* START: MArgins*/
+/* END: Marign == top == */
+.mt-20 {
+  margin-top: 20px; }
+
+.mt-40 {
+  margin-top: 40px; }
+
+.mt-50 {
+  margin-top: 50px; }
+
+.mt-60 {
+  margin-top: 60px; }
+
+.mt-80 {
+  margin-top: 80px; }
+
+/* END: Marign == top == */
+/* Marign == bottom == */
+.mb-20 {
+  margin-bottom: 20px; }
+
+.mb-40 {
+  margin-bottom: 40px; }
+
+.mb-50 {
+  margin-bottom: 50px; }
+
+.mb-60 {
+  margin-bottom: 60px; }
+
+/* END: Marign == bottom == */
+/* END: Margins */
+/* Text */
+.txt-l {
+  text-align: left !important; }
+
+.txt-r {
+  text-align: right !important; }
+
+/* END: Text */
+.bg-grey {
+  background-color: #FCFCFC;
+  padding-bottom: 50px; }
+
+h1 {
+  color: #555555;
+  font-size: 32px;
+  text-align: center;
+  letter-spacing: 0.08em;
+  line-height: 46px;
+  font-weight: lighter; }
+
+h2 {
+  color: #555555;
+  font-size: 16px;
+  text-align: left;
+  letter-spacing: 0.025em;
+  line-height: 26px;
+  font-weight: lighter; }
+
+header {
+  text-align: center; }
+  header ul li {
+    display: inline-block;
+    border: solid 1px #707070;
+    padding: 5px; }
+
+.title-container {
+  border-bottom: solid 1px #707070;
+  padding-bottom: 20px; }
+
+.textContH {
+  text-align: center;
+  padding-top: 40px; }
+  .textContH p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #555555;
+    font-weight: lighter;
+    letter-spacing: 0.025em; }
+
+.info-finish {
+  padding-left: 25px;
+  padding-right: 25px; }
+  .info-finish li {
+    display: flex;
+    margin-bottom: 30px; }
+    .info-finish li p {
+      font-size: 16px;
+      font-weight: lighter;
+      letter-spacing: 0.025em;
+      color: #555555; }
+      .info-finish li p:nth-child(2) {
+        font-weight: normal;
+        letter-spacing: 0.024em;
+        margin-left: 25px; }
+    .info-finish li:last-child p:nth-child(1) {
+      width: 35%; }
+
+.order-section {
+  padding: 0; }
+
+.filter__flex-stefan {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex; }
+  .filter__flex-stefan p {
+    padding-left: 25px;
+    color: #555555;
+    font-size: 18px;
+    letter-spacing: 0.025em; }
+  .filter__flex-stefan img {
+    cursor: pointer; }
+
+/*# sourceMappingURL=stefan-scss.css.map */

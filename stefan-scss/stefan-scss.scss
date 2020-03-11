@@ -1,0 +1,1246 @@
+
+/* COLORS */
+
+$h1color: #555555;
+$h1line: #707070;
+$bgGrey: #FCFCFC;
+$cartHeader: #379C49;
+
+/* END: COLORS */
+
+
+
+
+@mixin flexbox() {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+  }
+  
+  // The 'flex' shorthand
+  // - applies to: flex items
+  // <positive-number>, initial, auto, or none
+  @mixin flex($values) {
+	-webkit-box-flex: $values;
+	   -moz-box-flex: $values;
+		-webkit-flex: $values;
+		  -ms-flex: $values;
+			  flex: $values;
+  }
+  
+  // Flex Flow Direction
+  // - applies to: flex containers
+  // row | row-reverse | column | column-reverse
+  @mixin flex-direction($direction) {
+	-webkit-flex-direction: $direction;
+	   -moz-flex-direction: $direction;
+		-ms-flex-direction: $direction;
+			flex-direction: $direction;
+  }
+  
+  // Flex Line Wrapping
+  // - applies to: flex containers
+  // nowrap | wrap | wrap-reverse
+  @mixin flex-wrap($wrap) {
+	-webkit-flex-wrap: $wrap;
+	   -moz-flex-wrap: $wrap;
+		-ms-flex-wrap: $wrap;
+			flex-wrap: $wrap;
+  }
+  
+  // Flex Direction and Wrap
+  // - applies to: flex containers
+  // <flex-direction> || <flex-wrap>
+  @mixin flex-flow($flow) {
+	-webkit-flex-flow: $flow;
+	   -moz-flex-flow: $flow;
+		-ms-flex-flow: $flow;
+			flex-flow: $flow;
+  }
+  
+  // Display Order
+  // - applies to: flex items
+  // <integer>
+  @mixin order($val) {
+	-webkit-box-ordinal-group: $val;  
+	   -moz-box-ordinal-group: $val;     
+			 -ms-flex-order: $val;     
+			  -webkit-order: $val;  
+				  order: $val;
+  }
+  
+  // Flex grow factor
+  // - applies to: flex items
+  // <number>
+  @mixin flex-grow($grow) {
+	-webkit-flex-grow: $grow;
+	   -moz-flex-grow: $grow;
+		-ms-flex-grow: $grow;
+			flex-grow: $grow;
+  }
+  
+  // Flex shrink
+  // - applies to: flex item shrink factor
+  // <number> 
+  @mixin flex-shrink($shrink) {
+	-webkit-flex-shrink: $shrink;
+	   -moz-flex-shrink: $shrink;
+		-ms-flex-shrink: $shrink;
+			flex-shrink: $shrink;
+  }
+  
+  // Flex basis
+  // - the initial main size of the flex item
+  // - applies to: flex itemsnitial main size of the flex item
+  // <width> 
+  @mixin flex-basis($width) {
+	-webkit-flex-basis: $width;
+	   -moz-flex-basis: $width;
+		-ms-flex-basis: $width;
+			flex-basis: $width;
+  }
+  
+  // Axis Alignment
+  // - applies to: flex containers
+  // flex-start | flex-end | center | space-between | space-around 
+  @mixin justify-content($justify) {
+	-webkit-justify-content: $justify;
+	   -moz-justify-content: $justify;
+		-ms-justify-content: $justify;
+			justify-content: $justify;
+			  -ms-flex-pack: $justify;
+  }
+  
+  // Packing Flex Lines
+  // - applies to: multi-line flex containers
+  // flex-start | flex-end | center | space-between | space-around | stretch 
+  @mixin align-content($align) {
+	-webkit-align-content: $align;
+	   -moz-align-content: $align;
+		-ms-align-content: $align;
+			align-content: $align;
+  }
+  
+  // Cross-axis Alignment
+  // - applies to: flex containers
+  // flex-start | flex-end | center | baseline | stretch 
+  @mixin align-items($align) {
+	-webkit-align-items: $align;
+	   -moz-align-items: $align;
+		-ms-align-items: $align;
+			align-items: $align;
+  }
+  
+  // Cross-axis Alignment
+  // - applies to: flex items
+  // auto | flex-start | flex-end | center | baseline | stretch 
+  @mixin align-self($align) {
+	-webkit-align-self: $align;
+	   -moz-align-self: $align;
+		-ms-align-self: $align;
+			align-self: $align;
+  }
+
+
+
+
+
+
+
+.is-fixed {
+	position: fixed;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0;
+    border-bottom: 1px solid #D1D5DB;
+    left: 0;
+    background: #fff;
+    border: none;
+    width: 100%;
+	@include flexbox();
+	z-index: 999;
+    right: 0;
+    height: max-content;
+	bottom: 0;
+	@include justify-content(center);
+}
+.is-fixed tr {
+	@include flexbox();
+	@include align-items(center);
+	width: 100%;
+}
+.if-fixed th {
+	padding: 26px 40px;
+}
+
+
+
+.fade-enter{
+	opacity: 0;
+}
+.fade-enter-active{
+	transition: opacity 1s;
+}
+.fade-leave {
+	/* opacity: 1; */
+}
+.fade-leave-active{
+	transition: opacity 1s;
+	opacity: 0;
+}
+
+
+.order-sort-rows {
+	transition: transform 1s;
+}
+.uparrow {
+	background-color: red;
+}
+.downarrow {
+	background-color: #379C49;
+}
+
+
+.sortF.asc > i.material-icons::after {
+	content: "arrow_drop_up";
+}
+.sortF.desc > i.material-icons::after {
+	content: "arrow_drop_down";
+}
+
+
+
+
+/* STRAINJA style*/
+
+input[type="submit"], input[type="reset"], input[type="button"], input[type="text"], input[type="password"], button {
+	cursor: auto;
+	
+}
+input[type="text"] {
+	background-color: white;
+}
+
+/* ----> BESTELLEN page <---- */
+
+/* selct list */
+.custom-select {
+	margin: 0 auto;
+	select {
+		// display: block;
+		// width: 100%;
+		// padding: 2px 25px 2px 2px; 
+		// border: none; 
+		// background: url("../images/ic_dropdown.svg") right center no-repeat; 
+		// appearance: none; 
+		// -webkit-appearance: none;
+		// -moz-appearance: none
+	}
+}
+
+.select-items div, .select-selected {
+	background-color: white;
+}
+
+.select-items {
+	top: 95px;
+}
+/* END: selct list */
+
+
+// checkbox
+.fls__checkbox {
+	label {
+		color:#555555!important;
+		&:before {
+			height: 18px;
+			width: 18px;
+		}
+		&:after {
+    		width: 9px;
+		}
+	}
+}
+.reset-filters {
+	background: #A8AAB1;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	-ms-border-radius: 50px;
+	border-radius: 50px;
+	font-size: 18px;
+	font-weight: normal !important;
+	font-family: "Roboto", sans-serif;
+	cursor: pointer;
+	padding: 10px 15px;
+	color: #fff !important;
+	width: 100%;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 0.025em;
+	border: none !important;
+	-webkit-box-shadow: 0 3px 0px rgba(85, 85, 85, 0), 0 0px 6px rgba(85, 85, 85, 0.1);
+	-moz-box-shadow: 0 3px 0px rgba(85, 85, 85, 0), 0 0px 6px rgba(85, 85, 85, 0.1);
+	box-shadow: 0 3px 0px rgba(85, 85, 85, 0), 0 0px 6px rgba(85, 85, 85, 0.1);
+	-webkit-transition: background-color 0.5s ease;
+	-moz-transition: background-color 0.5s ease;
+	-o-transition: background-color 0.5s ease;
+	transition: background-color 0.5s ease; 
+	&:hover {
+		background-color: $h1color;
+	}
+}
+// END: checkbox
+
+
+
+/* Email section */
+.fls__modal {
+	padding: 50px 0 0 0px;
+	margin: 0 auto;
+}
+/* END: Email section */
+
+/* ---->END: BESTELLEN page <---- */
+
+
+
+
+/* ---->START: SCHULEN DIE DAS FLS HABEN page <---- */
+
+
+// START: Shopping chart
+.icon-ic_cart_grey.active:before {
+	box-shadow: none;
+}
+.fls__cart {
+	display: flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+}
+.fls__filters {
+	.cart__content {
+		.sum {
+			bottom: 0px;
+			left: 25px;
+		}
+	}
+}
+// END: Shopping chart
+
+// START: filter
+.fls__filters {
+	margin-bottom: 0!important;
+	.filters__content.showFilter {
+		padding-top: 30px;
+	}
+	.filter__flex {
+		padding: 0 17px;
+		// -webkit-box-pack: baseline;
+    	// -ms-flex-pack: baseline;
+		justify-content: normal!important;
+		.fls__radios, .fls__checkbox {
+			width: 25%;
+		}
+	}
+	.cart {
+		z-index: 100;
+		background: #fff;
+		padding: 16px 16px;
+		position: absolute;
+		top: 40px;
+		right: 50px;
+		width: 450px;
+		box-shadow: 0px 3px 6px 0 rgba(168, 170, 177, 0.6);
+		border: solid 1px #D1D5DB;
+		border-radius: 6px;
+		.cart-h2 {
+			font-weight: normal;
+			letter-spacing: 0.025em;
+			font-size: 18px;
+			border-bottom: solid 1px #D1D5DB;
+			padding-bottom: 15px;
+		}
+		p {
+			font-size: 16px;
+			font-weight: lighter;
+			color: #555555;
+			padding-top: 15px;
+		}
+		.cart__container {
+			padding: 15px 0 15px 0;
+		}
+		.cart__header {
+			color: $cartHeader;
+			font-size: 18px;
+			text-align: left;
+		}
+		.cart__items {
+			border-top: solid 1px #D1D5DB;
+			border-bottom: solid 1px #D1D5DB;
+			table {
+				padding: 10px 0 10px 0;
+				tr {
+					th, input {
+						font-weight: 300;
+						margin-right: 10px;
+						font-size: 16px; 
+						line-height: 1; 
+						color: $h1color;
+						padding-bottom: 15px;
+					}
+					td {
+						@include flexbox();
+						@include justify-content(flex-end);
+						input {
+							border: solid 1px lightgrey;
+							border-radius: 5px;
+							width: 25%;
+							text-align: right;
+							padding: 3px 10px;
+						}
+					}
+				}
+			}
+		}
+	}
+	.cart__button-cont {
+		background-color: #379C49;
+    text-align: center;
+    border-radius: 5px;
+		.button-cont__button {
+			color: $bgGrey;
+			font-size: 18px;
+			font-weight: 500;
+			padding: 12px;
+			img {
+				padding-right: 15px;
+			}
+		}
+	}
+}
+.dNone {
+	display: none;
+}
+// END: filter
+
+
+// START: pagination
+.fls__pagination {
+	ul {
+		display: flex;
+		justify-content: flex-end;
+	}
+}
+// END: pagination
+
+/* ---->END:: SCHULEN DIE DAS FLS HABEN page <---- */
+
+
+.custom-select {
+	select {
+		display: block;
+	}
+} 
+
+
+/* ----> SCHULEN DIE DAS FLS HABEN page <---- */
+
+/* START: Pagination */
+.fls__pagination {
+	ul {
+		li {
+			float: right;
+			&:last-child, &:first-child {
+				margin-right: 8px;
+				
+			}
+			&:first-child {
+				background-color: #53AFD8;
+				color: #fff;
+				border: 1px solid #D1D5DB;
+				-moz-border-radius: 50%;
+				-webkit-border-radius: 50%;
+				-ms-border-radius: 50%;
+				border-radius: 50%;
+			}
+			
+		}
+	}
+}
+.activePag {
+	background-color: #53AFD8;
+	color: #fff!important;
+}
+/* END: Pagination */
+
+
+/* START: table */
+
+.fls__modal {
+	max-width: inherit;
+	border-radius: 0;
+
+}
+
+/* END: table */
+
+
+/* START: table input */
+.fls__table {
+	section {
+		padding: 30px 0;
+	}
+	table {
+		th {
+			cursor: pointer;
+			position: relative;
+		}
+		td {
+			position: relative;
+			img {
+				width: 13px;
+				height: 13px;
+				cursor: pointer;
+			}
+			input {
+				border-radius: 18px;
+				&:hover {
+					border-color: #A8AAB1;
+				}
+				&:focus {
+					border-color: #53AFD8;
+				}
+			}
+		}
+		tbody {
+			tr {
+				background-color: #FCFCFC;
+				&:last-child {
+					border-bottom: 1px solid #D1D5DB;
+				}
+			}
+		}
+	}
+	.load-button {
+		width: 40%;
+		margin: 0 auto;
+		button {
+			margin: 10px 0;
+			text-align: center;
+			-moz-border-radius: 50px;
+			-webkit-border-radius: 50px;
+			-ms-border-radius: 50px;
+			border-radius: 50px;
+			font-size: 18px;
+			font-weight: normal !important;
+			font-family: "Roboto", sans-serif;
+			cursor: pointer;
+			padding: 10px 15px;
+			color: #fff !important;
+			width: 100%;
+			text-transform: uppercase;
+			text-align: center;
+			letter-spacing: 0.025em;
+			border: none !important;
+			-webkit-box-shadow: 0 3px 0px rgba(85, 85, 85, 0), 0 0px 6px rgba(85, 85, 85, 0.1);
+			-moz-box-shadow: 0 3px 0px rgba(85, 85, 85, 0), 0 0px 6px rgba(85, 85, 85, 0.1);
+			box-shadow: 0 3px 0px rgba(85, 85, 85, 0), 0 0px 6px rgba(85, 85, 85, 0.1);
+			-webkit-transition: background-color 0.5s ease;
+			-moz-transition: background-color 0.5s ease;
+			-o-transition: background-color 0.5s ease;
+			transition: background-color 0.5s ease; 	
+		}
+		.load-more {
+			background: #A8AAB1;
+		}
+		.load-less {
+			background: #555555;
+		}
+	}
+
+		// button {
+		// 	margin: 10px 0;
+		// 	background-color: $cartHeader;
+		// 	color:#fff;
+		// 	border: solid 1px $cartHeader;
+		// 	border-radius: 5px;
+		// 	padding: 5px;
+		// 	cursor: pointer;
+		// }	
+}
+
+.activeFilter {
+	&:after {
+		content: '\f0de';
+		position: absolute;
+		font-family: FontAwesome;
+		font-weight: 400;
+		top: 22px;
+		font-size: 21px;
+		margin-left: 3px;
+	}
+
+}
+
+.activFilterDown {
+	&:after {
+		content: '\f0dd';
+		position: absolute;
+		font-family: FontAwesome;
+		font-weight: 400;
+		top: 22px;
+		font-size: 21px;
+		margin-left: 3px;
+	}
+} 
+
+/* END: table input */
+
+/* ----> END: SCHULEN DIE DAS FLS HABEN page <---- */
+
+
+
+
+
+/* ----> START: WARENKORB page <---- */
+
+/* START: delete icon */
+.icon-ic_delete {
+	cursor: pointer;
+}
+/* END: delete icon */
+
+/* ----> END: WARENKORB page <---- */
+
+
+/* =========================================================================== */
+
+
+
+
+/* ----> START: BESTELL - LISTE page <---- */
+
+.fls__radio {
+	ul {
+		li {
+		    display: inline-block;
+    		width: 20%
+		}
+	}
+	.textContH {
+		text-align: left;
+		padding-top: 0;
+		p {
+			line-height: 4em;
+		}
+	}
+}
+
+// Add class and Remove
+.email-input {
+	position: relative;
+}
+.borderInput {
+	border: solid 1px #ED1C24!important;
+	position: relative;
+} 
+.error-x {
+	&:before {
+		content:url('../images/ic_remove_red.svg');
+		position: absolute;
+		top: 7px;
+		right: 10px;
+	}
+}
+
+// END: Add class and Remove
+/* ----> END: BESTELL - LISTE page <---- */
+
+
+
+
+/* =========================================================================== */
+
+
+
+/* STRAINJA style*/
+
+
+
+
+
+
+/* START: GRID */
+
+.grid-800 {
+  max-width: 800px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%; 
+}
+
+/* END: GRID */
+
+
+
+/* START: Paddings*/
+
+/* Padding == top == */
+.pt-20 {
+	padding-top: 20px;
+}
+
+.pt-40 {
+	padding-top: 40px;
+}
+
+.pt-50 {
+	padding-top: 50px;
+}
+
+.pt-60 {
+	padding-top: 60px;
+}
+/*END: Padding == top == */
+
+
+/* Padding == bottom == */
+.pb-20 {
+	padding-bottom: 20px;
+}
+
+.pb-40 {
+	padding-bottom: 40px;
+}
+
+.pb-50 {
+	padding-bottom: 50px;
+}
+
+.pb-60 {
+	padding-bottom: 60px;
+}
+/* END: Padding == bottom == */
+
+/* END: Paddings */
+
+
+
+/* START: MArgins*/
+
+/* END: Marign == top == */
+.mt-20 {
+	margin-top: 20px;
+}
+
+.mt-40 {
+	margin-top: 40px;
+}
+
+.mt-50 {
+	margin-top: 50px;
+}
+
+.mt-60 {
+	margin-top: 60px;
+}
+
+.mt-80 {
+	margin-top: 80px;
+}
+/* END: Marign == top == */
+
+
+
+/* Marign == bottom == */
+.mb-20 {
+	margin-bottom: 20px;
+}
+
+.mb-40 {
+	margin-bottom: 40px;
+}
+
+.mb-50 {
+	margin-bottom: 50px;
+}
+
+.mb-60 {
+	margin-bottom: 60px;
+}
+/* END: Marign == bottom == */
+
+/* END: Margins */
+
+
+/* Text */
+.txt-l {
+	text-align: left!important;
+}
+
+.txt-r {
+	text-align: right!important;
+}
+
+/* END: Text */
+.cart-absolute {
+	position: absolute;
+	right: 0;
+  	top: 35px;
+}
+
+.filters__container {
+	position: relative;
+}
+
+.mw-400 {
+	max-width: 400px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.pos-fixed-cart {
+	position: fixed;
+	right: 150px;
+	top: 200px;
+}
+
+.bg-grey {
+	background-color: $bgGrey;
+	padding-bottom: 50px;
+}
+
+
+h1 {
+	color: $h1color;
+	font-size: 32px;
+	text-align: center;
+	letter-spacing: 0.08em;
+	line-height: 46px;
+    font-weight: lighter;
+}
+
+h2 {
+	color: $h1color;
+	font-size: 16px;
+	text-align: left;
+	letter-spacing: 0.025em;
+	line-height: 26px;
+	font-weight: lighter;
+}
+
+
+header {
+	text-align: center;
+	ul {
+		width: 10%;
+    margin: 0 auto;
+		li {
+			// display: inline-block;
+			display: none;
+			border: solid 1px $h1line;
+			padding: 5px;
+			&:first-child {
+				display: block;
+			}
+		}
+		.table-header {
+			display: block;
+		}
+	}
+}
+
+
+.title-container {
+	border-bottom: solid 1px $h1line;
+	padding-bottom: 20px;
+	.schule-title {
+		font-weight: 500;
+	}
+}
+
+
+.textContH {
+	text-align: center;
+	padding-top: 40px;
+	p {
+	    font-size: 16px;
+	    line-height: 1.7;
+	    color: $h1color;
+	    font-weight: lighter;
+	    letter-spacing: 0.025em;
+	}
+}
+
+
+
+.info-finish {
+	padding-left: 25px;
+	padding-right: 25px;
+	li {
+		display: flex;
+		margin-bottom: 30px;
+		p {
+			font-size: 16px;
+			font-weight: lighter;
+			// line-height: 0.026em;
+			letter-spacing: 0.025em;
+			color: $h1color;
+				
+				&:nth-child(2) {
+				font-weight: normal;
+				letter-spacing: 0.024em;
+				margin-left: 25px;
+			}
+		}
+		&:last-child {
+			p {
+				&:nth-child(1) {
+					width: 33%;
+				}
+			}
+		}
+	}
+}
+
+
+
+.order-section {
+	padding: 0;
+}
+
+.filter__flex-stefan {
+	@include flexbox;
+	p {
+		padding-left: 25px;
+		color: $h1color;
+		font-size: 18px;
+		letter-spacing: 0.025em;
+	}
+	img {
+		cursor: pointer;
+	}
+}
+
+
+
+.fls__form {
+	max-width: 400px;
+	width: 100%;
+	margin: 0 auto;
+	padding-bottom: 50px;
+	span {
+		&:first-child {
+			font-size: 16px;
+			text-align: left;
+			letter-spacing: 1px;
+			color: #555555;
+			font-weight: lighter;
+			line-height: 4em;
+		}
+	}
+}
+
+
+
+.custom-select {
+	select {
+		position: relative;
+		font-weight: 300;
+		letter-spacing: 0.025em;
+		color: #555555;
+		width: 100%;
+		font-size: 16px;
+		padding: 8px 16px;
+		cursor: pointer;
+		border: 1px solid #D1D5DB;
+		-moz-border-radius: 50px;
+		-webkit-border-radius: 50px;
+		-ms-border-radius: 50px;
+		border-radius: 50px;
+		font-size: 16px;
+		font-weight: 300;
+		font-family: "Roboto", sans-serif;
+		-webkit-transition: all 0.3s ease;
+		-moz-transition: all 0.3s ease;
+		-o-transition: all 0.3s ease;
+		transition: all 0.3s ease;
+		&:before {
+			position: absolute;
+			font-family: 'icomoon';
+			right: 14px;
+			content: "\e906";
+			color: #D1D5DB;
+		}
+		option {
+			background-color: #fff;
+			padding: 8px 16px;
+		}
+	}
+}
+
+.fls__indikator {
+	cursor: pointer;
+	&.minus {
+		&:before {
+			content: '-';
+			margin-right: 10px;
+		}
+	}
+}
+
+
+
+[class^="icon-"], [class*=" icon-"] {
+	line-height: unset;
+}
+
+.bounce-enter-active {
+  animation: bounce-in .5s;
+}
+.bounce-leave-active {
+  animation: bounce-in .5s reverse;
+}
+@keyframes bounce-in {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+
+.fls__filters [type="radio"]:checked + label:before, .fls__filters [type="radio"]:not(:checked) + label:before {
+	top: -15px;
+}
+.fls__filters [type="radio"]:checked + label:after {
+	top: -19px;
+}
+
+
+#markers {
+	width: 30%;
+}
+
+
+.icon-ic_cart_grey {
+	font-family: "Roboto", sans-serif!important;
+	color: #555555;
+	cursor: pointer;
+	&:before {
+		box-shadow: none;
+		font-family: 'icomoon' !important;
+		color: black;
+		border: none;
+	}
+}
+
+.icon-ic_cart_grey.active {
+	color: #379C49;
+	&:before {
+		border:none!important;
+	}
+}
+
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: inherit;
+    margin: 0;
+}
+
+
+
+
+
+
+// ============== RESPONSIVE ==============
+
+@media only screen and (max-width: 550px) {
+	input[type="number"]::-webkit-outer-spin-button,
+	input[type="number"]::-webkit-inner-spin-button {
+		-webkit-appearance: none;
+		margin: 0;
+	}	
+	.checkout {
+		#arrowBack {
+			padding: 0 30px;
+		}
+		.fls__modal {
+			padding: 0 10px;
+			.fls__radio {
+				ul {
+					li {
+						margin-bottom: 10px;
+					}
+				}
+				.textContH {
+					padding: 0;
+					margin: 0;
+					width: auto;
+					padding-bottom: 20px;
+					p {
+						line-height: 26px;
+					}
+				}
+			}
+		}
+	}
+	.title-container {
+		width: 90%;
+	}
+	.textContH {
+		width: 90%;
+		margin: 0 auto;
+	}
+	.fls__filters {
+		padding: 20px;
+		.filter__flex {
+			@include flex-direction(column);	
+			.fls__radios, .fls__checkbox, #markers {
+				width: auto;
+			}
+		}
+	}
+
+	.order__table {
+		.fls__table {
+			table {
+				thead {
+					display: none;
+				}
+				tbody {
+					tr {
+						position: relative;
+						@include flexbox;
+						@include flex-direction(column);
+						td {
+							padding: 10px;
+						}
+						.input-quantity {
+							position: absolute;
+							right: 0;
+							top: 10px;
+							.rotate {
+								margin-left: 10px;
+							}
+						}
+						.remove-item {
+							position: absolute;
+							right: 0;
+							bottom: 20px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.page {
+		padding: 0;
+	}
+	.fls__table-container {
+		padding-top: 20px;
+		.fls__table {
+			table {
+				thead {
+					display: none;
+				}
+				tr {
+					td {
+						display: none;
+						&:first-child, &:nth-child(2), &:last-child {
+							display: block;
+						}
+					}
+				}
+				.responsive-table {
+					display: block;
+					position: relative;
+					padding: 30px 0;
+					td {
+						padding: 10px;
+					}
+					.td-responsive {
+						position: absolute;
+						right: 0;
+						top: 40px;
+						.table__flex {
+							@include flex-direction(column);
+						}
+						.add {
+							margin-top: 10px;
+							margin-right: 10px;
+							.table__flex {
+								@include flexbox;
+								@include flex-direction(initial);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.cart-absolute {
+		top: 155px;
+	}
+	
+
+	.info-finish {
+		li {
+			@include flex-direction(column);
+			p {
+				&:nth-child(2) {
+					margin-left: 0;
+				}
+			}
+		}
+	}
+}
+@media only screen and (max-width: 800px) {
+	.fls__table {
+	.load-button {
+			width: 50%;
+		}
+	}
+}
+
+
+@media only screen and (max-width: 450px) {
+
+	.title-container {
+		width: 90%;
+	}
+	.title-container, .textContH {
+		padding: 20px;
+	}
+	.textContH {
+		&.mt-80 {
+			margin-top: 0;
+		}
+	}
+
+	.bg-grey {
+		width: 100%;
+		padding: 20px;
+	}
+	
+	.fls__table {
+		.load-button {
+			width: 60%;
+		}
+	}
+
+}
+
+
+// ============== END: RESPONSIVE ==============
