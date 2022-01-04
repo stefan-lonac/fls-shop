@@ -30,8 +30,8 @@ include "../connection/connection-OOP.php";
    $message.="\r\n";
   
 
-   $header="From: info@farbleitsystem.com" . "\r\n" .
-    "Reply-To: info@farbleitsystem.com" . "\r\n";
+   $header="From: lonacstefan@gmail.com" . "\r\n" .
+    "Reply-To: lonacstefan@gmail.com" . "\r\n";
    $header .= "MIME-Version: 1.0\n";
    $header .= "Content-type: text/html\n";
    $retval = mail ($to,$subject,$message,$header);

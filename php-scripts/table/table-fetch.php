@@ -13,11 +13,7 @@ while($row = mysqli_fetch_array($userData)){
    $response[] = $row;
 }
 
-
 echo json_encode($response);
-
-
-// echo $schuleId;
 
 exit;
 

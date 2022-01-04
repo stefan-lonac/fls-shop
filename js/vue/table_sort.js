@@ -315,7 +315,6 @@ mounted: function() {
         })
         .then(function (response) {
             table.showSchool = response.data;
-            console.log(table.showSchool);
         })
         .catch(function (error) {
             console.log(error);
@@ -602,9 +601,9 @@ mounted: function() {
       addToCart(item) {
         var found = false;
         item.quantity++;
-        
+        console.log(item.Id);
         this.items.forEach(itema => {
-          if (itema.id === item.id) {
+          if (itema.Id === item.Id) {
             found = true;
           }
         });

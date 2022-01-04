@@ -59,8 +59,7 @@
                                                     <div><span class="icon-ic_check"></span></div>
                                                     <div class="counter">{{ item.quantity }}</div>
                 
-                                                </div>
-     -->
+                                                </div>-->
                                                 <div class="table__flex">
                                                     <!-- <div><span class="icon-ic_check"></span></div> --> 
                                                     <div class="counter">{{ item.quantity }}</div>

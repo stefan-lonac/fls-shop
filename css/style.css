@@ -920,20 +920,23 @@ section {
     opacity: 1;
     -webkit-transform: scale(1);
     transform: scale(1); }
-  .fls__filters .fls__radios input#Grün[type="checkbox"]:checked + label:before,
-  .fls__filters .fls__radios input#Grün[type="checkbox"]:not(:checked) + label:before {
+    .fls__filters .fls__radios input#Black[type="checkbox"]:checked + label:before,
+  .fls__filters .fls__radios input#Black[type="checkbox"]:not(:checked) + label:before {
+    background: #000; }
+  .fls__filters .fls__radios input#Green[type="checkbox"]:checked + label:before,
+  .fls__filters .fls__radios input#Green[type="checkbox"]:not(:checked) + label:before {
     background: #379C49; }
-  .fls__filters .fls__radios input#Blau[type="checkbox"]:checked + label:before,
-  .fls__filters .fls__radios input#Blau[type="checkbox"]:not(:checked) + label:before {
+  .fls__filters .fls__radios input#Blue[type="checkbox"]:checked + label:before,
+  .fls__filters .fls__radios input#Blue[type="checkbox"]:not(:checked) + label:before {
     background: #004E82; }
-  .fls__filters .fls__radios input#Violett[type="checkbox"]:checked + label:before,
-  .fls__filters .fls__radios input#Violett[type="checkbox"]:not(:checked) + label:before {
+  .fls__filters .fls__radios input#Purple[type="checkbox"]:checked + label:before,
+  .fls__filters .fls__radios input#Purple[type="checkbox"]:not(:checked) + label:before {
     background: #95228A; }
-  .fls__filters .fls__radios input#Rot[type="checkbox"]:checked + label:before,
-  .fls__filters .fls__radios input#Rot[type="checkbox"]:not(:checked) + label:before {
+  .fls__filters .fls__radios input#Red[type="checkbox"]:checked + label:before,
+  .fls__filters .fls__radios input#Red[type="checkbox"]:not(:checked) + label:before {
     background: #ED1C24; }
-  .fls__filters .fls__radios input#Gelb[type="checkbox"]:checked + label:before,
-  .fls__filters .fls__radios input#Gelb[type="checkbox"]:not(:checked) + label:before {
+  .fls__filters .fls__radios input#Yellow[type="checkbox"]:checked + label:before,
+  .fls__filters .fls__radios input#Yellow[type="checkbox"]:not(:checked) + label:before {
     background: #FDB924; }
   .fls__filters .fls__radios input#Orange[type="checkbox"]:checked + label:before,
   .fls__filters .fls__radios input#Orange[type="checkbox"]:not(:checked) + label:before {

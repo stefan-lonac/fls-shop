@@ -11,8 +11,6 @@
 
 <div class="grid-960" id="table">
 
-
-
 		<!-- START: Title Table container -->
 		<div class="title-container grid-800" v-show="!verified">
 			<h1>SCHULEN DIE DAS FLS HABEN</h1>	
@@ -186,8 +184,7 @@
 														<div><span class="icon-ic_check"></span></div>
 														<div class="counter">{{ item.quantity }}</div>
 					
-													</div>
-		 -->
+													</div>-->
 		 											<div class="table__flex">
 														<!-- <div><span class="icon-ic_check"></span></div> -->	
 														<div class="counter">{{ item.quantity }}</div>

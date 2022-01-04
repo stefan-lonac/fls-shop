@@ -1,14 +1,9 @@
 <?php
 
-// $servername = "localhost";
-// $username = "inko_db";
-// $password = "MPXDmd23wHPZg5kV";
-// $database = "stefan_db";
-
 $servername = "localhost";
-$username = "farblo_13";
-$password = "Fhp4YccTtpM1Y4eu";
-$database = "farblo_shop_2016_10";
+$username = "root";
+$password = "";
+$database = "fls_shop";
 
 
 // Create connection
